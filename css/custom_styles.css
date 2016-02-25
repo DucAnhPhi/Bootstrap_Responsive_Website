@@ -119,13 +119,9 @@ body {
     padding-bottom: 20px;
 }
 
-.footer .container{
-    border-top: 1px solid black;    
-}
-
 .footer .container a{
     text-decoration:            none;
-    color:                      black;
+    color:                      grey;
 }
 
 .footer a:visited{
