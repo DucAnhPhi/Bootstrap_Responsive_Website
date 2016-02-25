@@ -45,11 +45,11 @@
                             Workaround in order to hide dropdown menu if link is clicked in mobile view.
                             If you don't add that second type, it will show a strange phantom animated horizontal scroll bar when trying to toggle the menu when it is not there.
 -->
-                            <li class="visible-xs">
-                                <a href="#" data-toggle="collapse" data-target=".navbar-collapse">ABOUT</a>
+                            <li class="visible-xs active">
+                                <a href="#main" data-toggle="collapse" data-target=".navbar-collapse">ABOUT</a>
                             </li>
-                            <li class="hidden-xs">
-                                <a href="#">ABOUT</a>
+                            <li class="hidden-xs active">
+                                <a href="#main">ABOUT</a>
                             </li>
                             <li class="visible-xs">
                                 <a href="#work" data-toggle="collapse" data-target=".navbar-collapse">WORK</a>
@@ -170,6 +170,7 @@
                         <!-- Collapse-Content-->
                             <div id="collapseone" class="panel-collapse collapse in"> <!--in- Ausdruck für ausgeklappter Zustand -->
                                 <div class="panel-body">
+                                    <div class="panel_images" id="recursive_triangles"></div><!-- end div -->
                                     <p>The output of <a href="https://github.com/DucAnhPhi/RecursiveTriangle/blob/master/src/drawingRecursiveTriangles/DrawRecursiveTriangles.java" target="_blank">our function</a> draws a <a href="https://de.wikipedia.org/wiki/Sierpinski-Dreieck" target="_blank">Sierpinsky Triangle</a>, which essentially is a big triangle whose midpoints are connected to create a new triangle. Again the midpoints of the new inner triangle are connected to create another triangle - this is done recursively to a specific degree (which we set to 7). The result is a beautiful theoretically endless pattern, which represents the recursion method.
                                     </p>
                                 </div><!-- end panel-body -->
@@ -186,6 +187,7 @@
                             </div><!-- end panel-heading -->
                             <div id="collapsetwo" class="panel-collapse collapse">
                                 <div class="panel-body">
+                                    <div class="panel_images" id="a_to_b"></div><!-- end div -->
                                     <p>In this project we were assigned to design and implement a Weighted Graph, in order to solve the 
                                     <a href="https://en.wikipedia.org/wiki/Shortest_path_problem">shortest path problem</a> with 
                                     <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank"> Dijkstra's algorithm</a>. Our small 
@@ -206,6 +208,7 @@
                             </div><!-- end panel-heading -->
                             <div id="collapsethree" class="panel-collapse collapse">
                                 <div class="panel-body">
+                                    <div class="panel_images" id="eight_queens"></div><!-- end div -->
                                     <p>Did you ever wonder whether it is possible to put eight queens on a chessboard without them threatening each other? Yes it is! We worked together on a 
                                     <a href="https://github.com/DucAnhPhi/Eight-Queens/blob/master/src/eight_queens_problem/Chessgame.java" target="_blank">backtracking algorithm</a> which computes all possible combinations of this 
                                     <a href="https://en.wikipedia.org/wiki/Eight_queens_puzzle" target="_blank">Eight Queens Problem</a>.
@@ -224,6 +227,7 @@
                             </div><!-- end panel-heading -->
                             <div id="collapsefour" class="panel-collapse collapse">
                                 <div class="panel-body">
+                                    <div class="panel_images" id="scrabble_cheater"></div><!-- end div -->
                                     <p>Are you a desperate scrabble player? Use a scrabble cheater! With the help of a hashtable the 
                                     <a href="https://github.com/DucAnhPhi/ScrabbleCheater/blob/master/src/scrabble/data/SimpleWordList.java" target="_blank">Scrabble Cheater Application</a> reads in any given tile rack and prints all English words "buildable" with the given letters. 
                                     </p>
@@ -295,6 +299,8 @@
         <script src="js/jquery-1.12.0.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
+        <!-- Custom Script -->
+        <script src="js/custom_script.js"></script>
   </body>
     
 </html>
