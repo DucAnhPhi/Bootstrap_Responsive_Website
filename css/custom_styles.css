@@ -62,6 +62,10 @@ body {
 }
 
 /*Work section*/
+#accordion{
+    margin-top: 20px;
+}
+
 #accordion .panel .panel-body img{
     display:block;
     margin: 0 auto;
