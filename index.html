@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Mobile viewport optimized -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Duc Anh Phi</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Custom CSS -->
+        <link href="css/custom_styles.css" rel="stylesheet">
+        
+        <!-- Font -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body data-spy="scroll" data-target="#navigation">
+        <header>
+            
+            <!-- Navbar top -->
+            <div class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <!-- Navbar brand-->
+                        <a href="" class="navbar-brand">DUCANH<b id="navbarbrand">PHI</b></a>
+                        <!-- Navicon -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation"><span class="glyphicon glyphicon-align-justify"></span>
+                        </button>
+                    </div><!-- end navbar-header -->  
+                        <!-- Collapse Content -->
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <!-- Navigation Links -->
+                        <ul class="nav navbar-nav navbar-right">
+<!--
+                            Workaround in order to hide dropdown menu if link is clicked in mobile view.
+                            If you don't add that second type, it will show a strange phantom animated horizontal scroll bar when trying to toggle the menu when it is not there.
+-->
+                            <li class="visible-xs">
+                                <a href="#" data-toggle="collapse" data-target=".navbar-collapse">ABOUT</a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#">ABOUT</a>
+                            </li>
+                            <li class="visible-xs">
+                                <a href="#work" data-toggle="collapse" data-target=".navbar-collapse">WORK</a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#work">WORK</a>
+                            </li>
+                            <li class="visible-xs">
+                                <a href="#contact" data-toggle="collapse" data-target=".navbar-collapse">CONTACT</a>
+                            </li>
+                            <li class="hidden-xs">
+                                <a href="#contact">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div><!-- end collapse -->  
+                </div><!-- end container -->
+            </div><!-- end navbar -->
+            
+        </header>
+        
+        <div class="container" id="main">     
+            <!-- Carousel slide -->
+            <div class="carousel slide" id="myCarousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active" id="slide1">
+                        <div class="carousel-caption">
+                            <h2>Bootstrap 3</h2>
+                            <p>I created this website using the Bootstrap framework.<br/>This way, the web-experience is the same on every device.</p>
+                        </div><!-- end carousel-caption -->
+                    </div><!-- end item -->
+                    <div class="item" id="slide2">
+                        <div class="carousel-caption">
+                            <h2>Clean Code</h2>
+                            <p>Easy to understand and easy to change.<br/>The source code of this website is well structured and documented.</p>
+                        </div><!-- end carousel-caption -->
+                    </div><!-- end item -->
+                    <div class="item" id="slide3">
+                        <div class="carousel-caption">
+                            <h2>Like what you are seeing?</h2>
+                            <p>Contact me or follow me on <a href="https://github.com/DucAnhPhi" target="_blank">Github!</a></p>
+                        </div><!-- end carousel-caption -->
+                    </div><!-- end item -->
+                    <!-- Carousel Controls -->
+                    <a href="#myCarousel" class="left carousel-control" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a href="#myCarousel" class="right carousel-control" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div><!-- end carousel-inner -->
+            
+            </div><!-- end myCarousel -->
+            
+            <div class="row" id="bigCallout">
+                <div class="col-md-12">
+                    <div class="well">
+                        <div class="page-header">
+                        <h1>Welcome<small> to my online portfolio!</small></h1>
+                        </div><!-- end page-header -->
+                        
+                        <p class="lead">This online portfolio was created by me, Duc Anh Phi.</p>
+                        <p>It's main purpose is to showcase some of my frontend webdevelopment skills.
+                        Keeping that in mind, some elements you will find here are redundant or don't make sense (like this gigantic slide panel..it looks good though). However I highly agree with the philosophy of 'form follows function' and simplicity. That's why I am a huge fan of this <a href="http://motherfuckingwebsite.com" target="_blank">website</a>.
+                        I look forward to fill this site with interesting content over time.
+                        </p>
+                        <button href="" class="btn btn-default">Useless Button</button>
+                        
+                        <!-- Button mit Modal-Window -->
+                
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-1">
+                        Push me!
+                        </button>
+                        <div class="modal fade" id="modal-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h3 class="modal-title">YOU ARE AWESOME!!11</h3>
+                                    </div><!-- end modal-header -->
+                                    <div class="modal-body">
+                                         <p>Good job, you pushed a button!</p>
+                                    </div><!-- end modal body -->
+                                    <div class="modal-footer">
+                                        <a href="" class="btn btn-default" data-dismiss="modal">Close</a>
+                                        <a href="" class="btn btn-primary" data-dismiss="modal">Ok.</a>
+                                    </div><!-- end modal-footer -->
+                                </div><!-- end modal content -->
+                            </div><!-- end modal dialog -->
+                        </div><!-- end modal -->
+                    </div><!-- end well -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+            
+            <div class="row" id="work">
+                           
+                <div class="col-md-4">
+                    <h2>Projects, codes, work i've done</h2>
+                    <p class="lead">Here you are are going to find a few projects within the scope of my studies. <br/>I have done them with some of my fellow students.</p>
+                </div><!-- end col -->
+                
+                <div class="col-md-8">
+                    <div class="panel-group" id="accordion">
+<!--                        Recursive Triangles-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a href="#collapseone" data-toggle="collapse" data-parent="accordion">
+                                    <h2 class="panel-title">
+                                        Recursive Triangles</h2> 
+                                </a>
+                            </div><!-- end panel-heading -->
+                        <!-- Collapse-Content-->
+                            <div id="collapseone" class="panel-collapse collapse in"> <!--in- Ausdruck für ausgeklappter Zustand -->
+                                <div class="panel-body">
+                                    <p>The output of <a href="https://github.com/DucAnhPhi/RecursiveTriangle/blob/master/src/drawingRecursiveTriangles/DrawRecursiveTriangles.java" target="_blank">our function</a> draws a <a href="https://de.wikipedia.org/wiki/Sierpinski-Dreieck" target="_blank">Sierpinsky Triangle</a>, which essentially is a big triangle whose midpoints are connected to create a new triangle. Again the midpoints of the new inner triangle are connected to create another triangle - this is done recursively to a specific degree (which we set to 7). The result is a beautiful theoretically endless pattern, which represents the recursion method.
+                                    </p>
+                                </div><!-- end panel-body -->
+                            </div><!-- end panel-collapse -->
+                        </div><!-- end panel -->
+<!--                        Getting from A to B-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a href="#collapsetwo" data-toggle="collapse" data-parent="accordion">
+                                    <h2 class="panel-title">
+                                        Getting from A to B   
+                                    </h2>
+                                </a>
+                            </div><!-- end panel-heading -->
+                            <div id="collapsetwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>In this project we were assigned to design and implement a Weighted Graph, in order to solve the 
+                                    <a href="https://en.wikipedia.org/wiki/Shortest_path_problem">shortest path problem</a> with 
+                                    <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank"> Dijkstra's algorithm</a>. Our small 
+                                    <a href="https://github.com/DucAnhPhi/MinimumSpanningTree/blob/master/src/Graph.java" target="_blank">application
+                                    </a>creates a random weighted graph. The user determines the number of edges and nodes that the graph should consist of. Afterwards the application prints the shortest as well as the cheapest path to the console.
+                                    </p>
+                                </div><!-- end panel-body -->
+                            </div><!-- end panel-collapse -->
+                        </div><!-- panel -->
+<!--                        Eight Queens Problem -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a href="#collapsethree" data-toggle="collapse" data-parent="accordion">
+                                    <h2 class="panel-title">
+                                        Eight Queens Problem 
+                                    </h2>
+                                </a>
+                            </div><!-- end panel-heading -->
+                            <div id="collapsethree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Did you ever wonder whether it is possible to put eight queens on a chessboard without them threatening each other? Yes it is! We worked together on a 
+                                    <a href="https://github.com/DucAnhPhi/Eight-Queens/blob/master/src/eight_queens_problem/Chessgame.java" target="_blank">backtracking algorithm</a> which computes all possible combinations of this 
+                                    <a href="https://en.wikipedia.org/wiki/Eight_queens_puzzle" target="_blank">Eight Queens Problem</a>.
+                                    </p>
+                                </div><!-- end panel-body -->
+                            </div><!-- end panel-collapse -->
+                        </div><!-- end panel -->
+<!--                        Scrabble Cheater-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a href="#collapsefour" data-toggle="collapse" data-parent="accordion">
+                                    <h2 class="panel-title">
+                                        Scrabble Cheater  
+                                    </h2>
+                                </a>
+                            </div><!-- end panel-heading -->
+                            <div id="collapsefour" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Are you a desperate scrabble player? Use a scrabble cheater! With the help of a hashtable the 
+                                    <a href="https://github.com/DucAnhPhi/ScrabbleCheater/blob/master/src/scrabble/data/SimpleWordList.java" target="_blank">Scrabble Cheater Application</a> reads in any given tile rack and prints all English words "buildable" with the given letters. 
+                                    </p>
+                                </div><!-- end panel-body -->
+                            </div><!-- end panel-collapse -->
+                        </div><!-- end panel -->
+                    </div><!-- end panel-group -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+            
+            <div class="row" id="contact">
+                    <div class="col-12">
+                        <div class="container">
+                        <h2>Contact Information</h2>
+                        <p class="lead">You are welcome to write me a message! I am going to answer it in a few hours.</p>
+                            </div><!-- end container -->
+                    </div><!-- end col -->
+            </div><!-- end row -->
+            <div class="row" id="features">
+                <div class="container">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="panel panel-default">    
+                            <div class="panel-heading">
+                            <h3 class="panel-title">E-Mail</h3>
+                            </div><!-- end panel-heading -->
+                            <div class="panel-body">
+                                <img src="images/email_small.jpg" alt="features image">
+                                <p>ducanhphi@gmail.com</p>
+                            </div><!-- end panel-body -->
+                        </div><!-- end panel -->
+                    </div><!-- end col -->
+                    <div class="col-sm-6 col-md-4">
+                        <div class="panel panel-default">    
+                            <div class="panel-heading">
+                            <h3 class="panel-title">Skype</h3>
+                            </div><!-- end panel-heading -->
+                            <div class="panel-body">
+                                <img src="images/skype_small.jpg" alt="features image">
+                                <p>Duc Anh Phi</p>
+                            </div><!-- end panel-body -->
+                        </div><!-- end panel -->
+                    </div><!-- end col -->
+                    <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
+                        <div class="panel panel-default">    
+                            <div class="panel-heading">
+                            <h3 class="panel-title">GitHub</h3>
+                            </div><!-- end panel-heading -->
+                            <div class="panel-body">
+                                <img src="images/git_small.jpg" alt="features image">
+                                <p>DucAnhPhi</p>
+                            </div><!-- end panel-body -->
+                        </div><!-- end panel -->
+                    </div><!-- end col -->
+                </div><!-- end container -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+
+        <footer class="footer">
+            <div class="container">
+                <a href="https://www.htw-berlin.de/" target="_blank">HTW, University of Applied Sciences Berlin, Germany</a>
+                <br/>
+                <a href="http://imi-bachelor.htw-berlin.de/" target="_blank">International Media and Computing</a>
+                <br/>
+                <a href="#main">Duc Anh Phi</a>
+            </div><!-- end container -->
+        </footer>
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+  </body>
+    
+</html>
