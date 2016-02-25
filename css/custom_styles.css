@@ -1,0 +1,206 @@
+/*Global Styles*/
+
+body {
+    color:                      #555;
+    font-family:                'Open Sans', sans-serif;
+    font-size:                  14px;
+    font-weight:                400;
+    position: relative; /*Needed for scrollspy*/
+}
+
+/*Navbar Logo*/
+.navbar-brand{
+    font-weight: lighter;
+}
+
+#navbarbrand{
+    color: black;
+}
+
+/*Carousel*/
+#myCarousel{
+    margin-top: 70px;
+}
+
+#myCarousel .item{
+    height: 400px;
+}
+
+#slide1{
+	background-image: url("../images/carousel_large_01.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#slide2{
+	background-image: url("../images/carousel_large_02.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#slide3{
+	background-image: url("../images/carousel_large_03.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+/*First Callout*/
+#bigCallout{
+    margin-top: 20px;
+}
+
+.well .page-header{
+    margin-top: 0;
+}
+
+.well .page-header h1{
+    margin-top: 0;
+}
+
+.well .btn{
+    margin-top: 15px;
+}
+
+/*Work section*/
+#accordion .panel .panel-body img{
+    display:block;
+    margin: 0 auto;
+}
+
+.panel_images{
+    height:300px;
+}
+
+#recursive_triangles{
+    background-image: url("../images/recursive_triangles_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#a_to_b{
+    background-image: url("../images/a_to_b_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#eight_queens{
+    background-image: url("../images/eight_queens_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#scrabble_cheater{
+    background-image: url("../images/scrabble_cheater_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+/*Features Contact Information*/
+#features{
+    text-align: center;
+}
+
+#features img{
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+#git{
+    height:200px;
+    width:200px;
+    border-radius: 100px;
+    background-image: url("../images/git.jpg");
+    background-repeat: no-repeat;    
+}
+
+/*Footer*/
+.footer{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.footer .container{
+    border-top: 1px solid black;    
+}
+
+.footer .container a{
+    text-decoration:            none;
+    color:                      black;
+}
+
+.footer a:visited{
+    text-decoration:            none;
+}
+
+.footer a:link{
+    text-decoration:            none;                    
+}
+
+.footer a:hover{
+    color:                      #336699;
+}
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Landscape phones and portrait tablets */
+@media screen and (max-width: 767px) {
+#slide1{
+	background-image: url("../images/carousel_medium_01.jpg");
+}
+
+#slide2{
+	background-image: url("../images/carousel_medium_02.jpg");
+}
+
+#slide3{
+	background-image: url("../images/carousel_medium_03.jpg");
+}
+
+#myCarousel .item{
+    height: 310px;
+    }
+
+.carousel-caption h2 {
+    font-size: 22px;
+	}
+    
+.carousel-caption {
+    font-size: 16px;
+	}
+    
+#recursive_triangles{
+    background-image: url("../images/recursive_triangles_small.jpg");
+}
+
+#a_to_b{
+    background-image: url("../images/a_to_b_small.jpg");
+}
+
+#eight_queens{
+    background-image: url("../images/eight_queens_small.jpg");
+}
+
+#scrabble_cheater{
+    background-image: url("../images/scrabble_cheater_small.jpg"); 
+}
+}
+
+/* Portrait phones and smaller */
+@media screen and (max-width: 480px) {
+#slide1{
+	background-image: url("../images/carousel_small_01.jpg");
+}
+
+#slide2{
+	background-image: url("../images/carousel_small_02.jpg");
+}
+
+#slide3{
+	background-image: url("../images/carousel_small_03.jpg");
+}
+
+}
+
