@@ -26,6 +26,10 @@ body {
     height: 400px;
 }
 
+#myCarousel .carousel-caption h2{
+    color: orange;
+}
+
 #slide1{
 	background-image: url("../images/carousel_large_01.jpg");
     background-repeat: no-repeat;
@@ -190,6 +194,12 @@ body {
 
 /* Portrait phones and smaller */
 @media screen and (max-width: 480px) {
+h1{
+    font-size: 25px;
+    }
+h2{
+    font-size: 20px;
+    }
 #slide1{
 	background-image: url("../images/carousel_small_01.jpg");
 }
